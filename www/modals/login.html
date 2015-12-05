@@ -1,0 +1,27 @@
+<ion-modal-view class="login-modal" ng-controller="LoginCtrl">
+  <ion-content delegate-handle="login-content">
+    <button class="button button-outline button-small button-positive" ng-click="showSignup()">
+      Sign up
+    </button>
+    <center>
+
+      <img src="img/ionic.png">
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" placeholder="Username">
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-android-lock placeholder-icon"></i>
+          <input type="password" placeholder="Password">
+        </label>
+      </div>
+
+      <button class="button button-block button-positive" ng-click="login()">
+        Login
+      </button>
+
+    </center>
+  </ion-content>
+</ion-modal-view>

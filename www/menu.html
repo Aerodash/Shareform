@@ -1,0 +1,74 @@
+<div ng-if="showScreen" class="animated fadeIn">
+   <ion-view view-title="Home">
+    <ion-side-menus enable-menu-with-back-views="false">
+      <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive bar-positive-transparent">
+          <ion-nav-back-button>
+          </ion-nav-back-button>
+
+          <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left" show-when="(max-width:768px)">
+            </button>
+          </ion-nav-buttons>
+          <ion-nav-buttons side="right">
+            <button class="button button-icon button-clear" ng-click="showChat($event)">
+              <i class="icon ion-chatbubble"></i>
+            </button>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+      </ion-side-menu-content>
+
+      <ion-side-menu side="left" expose-aside-when="large">
+        <ion-header-bar class="item item-avatar bar-positive" style="border-right: 0px">
+          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg"/>
+          <h2 style="color: white"><center>Chad Engle</center></h2>
+
+          <div class="button-bar">
+            <a class="button"><i class="ion-android-notifications"></i></a>
+            <a class="button"><i class="ion-android-chat"></i></a>
+            <a class="button"><i class="ion-gear-a"></i></a>
+            <a class="button"><i class="ion-power"></i></a>
+          </div>
+        </ion-header-bar>
+        <ion-content has-bouncing="false">
+          <ion-list>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-ios-paper"></i>
+              My feed
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-android-chat"></i>
+              Messages
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-person-stalker"></i>
+              Friends
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-images"></i>
+              Photos
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-calendar"></i>
+              Events
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-ios-people"></i>
+              Groups
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close href="#">
+              <i class="icon ion-share"></i>
+              My shareform
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>
+  </ion-view>
+</div>
+<ion-pane style="background: cornflowerblue" ng-if="!showScreen">
+  <div class="spinner">
+    <ion-spinner class="spinner-stable" icon="spiral"></ion-spinner>
+  </div>
+</ion-pane>

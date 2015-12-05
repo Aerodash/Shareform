@@ -1,0 +1,231 @@
+/* Empty. Add your own CSS if you like */
+ion-view > ion-content {
+  background-color: cornflowerblue !important;
+}
+
+/*transparent bar*/
+.bar.bar-positive-transparent {
+  background-color: rgba(56, 126, 245,.66) !important; /* or transparent, or background:none */
+}
+.scroll-content {
+  overflow: visible !important;
+}
+
+/***************************************************Spinner*****************************************/
+div.spinner {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 85px;
+  text-align: center;
+}
+.spinner svg {
+  width: 19% !important;
+  height: 85px !important;
+}
+
+/***************************************************All modals*****************************************/
+ion-modal-view {
+  border: 2px solid !important;
+  border-color: #0c60ee !important;
+}
+
+/***************************************************Login modal*****************************************/
+@media (max-width: 680px) {
+  ion-modal-view.login-modal {
+    top: 0 !important;
+  }
+}
+
+ion-modal-view.login-modal {
+  height: 480px;
+  top: 15%;
+}
+
+ion-modal-view.login-modal > ion-content {
+  padding: 20px;
+}
+
+ion-modal-view.login-modal > ion-content > div.scroll > button.button-outline {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+ion-modal-view.login-modal > ion-content > div.scroll > center > img {
+  margin-top: 60px;
+}
+
+ion-modal-view.login-modal > ion-content > div.scroll > center > div {
+  margin-top: 90px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+ion-modal-view.login-modal > ion-content > div.scroll > center > div > label > input {
+  text-align:center;
+}
+
+/***************************************************Signup Modal*****************************************/
+ion-modal-view.signup-modal {
+  height: 450px;
+  top: 15%;
+}
+
+@media (max-width: 680px) {
+  ion-modal-view.signup-modal {
+    top: 0 !important;
+  }
+}
+
+ion-modal-view.signup-modal > ion-content {
+  padding: 20px;
+}
+
+ion-modal-view.signup-modal > ion-content > div.scroll > center > div {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+ion-modal-view.signup-modal > ion-content > div.scroll > center > ion-list > div > ion-item {
+  padding: 5px;
+  margin-bottom: 4px;
+}
+
+ion-modal-view.signup-modal > ion-content > div.scroll > center > ion-list > div > ion-item > input {
+  padding-bottom: 2px;
+}
+
+.signup-icon {
+  padding-bottom: 9px;
+}
+
+/***************************************************Side menu*****************************************/
+ion-side-menu > ion-content {
+  top: 83px !important;
+}
+
+/*Header*/
+ion-side-menu > ion-header-bar {
+  height: 84px !important;
+  border-bottom: 1px solid #0c60ee !important;
+  margin-left: 0px !important;
+}
+
+ion-side-menu > ion-header-bar > h2 > center {
+  height: 20px;
+}
+
+ion-side-menu > ion-header-bar > img {
+  border-radius: 5px !important;
+  max-width: none !important;
+  max-height: none !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+/*Button bar*/
+ion-side-menu > ion-header-bar > div.button-bar {
+  padding-top: 8px;
+  padding-left: 10px;
+  height: 25px;
+}
+
+ion-side-menu > ion-header-bar > .button-bar > .button:nth-child(1) {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+ion-side-menu > ion-header-bar > .button-bar > .button:last-child {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+}
+
+/*Icons*/
+ion-side-menu > ion-content > div.scroll > ion-list > div > ion-item.item-icon-left.item > a > i {
+  color: #387ef5;
+  font-size: 26px;
+}
+
+/***************************************************Chat popover*****************************************/
+.chat-popover {
+  background: #585858;
+  width: 280px !important;
+  height: 90% !important;
+}
+
+.chat-popover > ion-content > div.scroll > ion-list > div {
+  padding-top: 0px !important;
+}
+
+.chat-popover > ion-content {
+  margin-top: 0px !important;
+}
+
+/*Header*/
+.chat-popover > ion-header-bar {
+  border-color: #2B2B2B;
+}
+
+/*Divider*/
+.chat-popover > ion-content > div.scroll > ion-list > div > ion-item.item-divider.item {
+  background: #444;
+  color: #BFBFBF;
+  padding-bottom: 0px;
+  padding-top: 3px;
+  padding-left: 30px;
+  border: 1px solid #2B2B2B;
+  height: 25px;
+}
+
+.chat-popover > ion-content > div.scroll > ion-list > div > ion-item.item-divider.item > i{
+  font-size: 20px;
+  left: 0px;
+  color: #F8FB6D;
+}
+
+/*Items*/
+.chat-popover > ion-content > div.scroll > ion-list > div > ion-item.item {
+  border: 1px solid #2B2B2B;
+  background: #656565;
+  color: white;
+  padding-top: 10px;
+  padding-left: 55px;
+  min-height: 30px;
+  height: 40px;
+}
+
+.chat-popover > ion-content > div.scroll > ion-list > div > ion-item.item > .ion-record {
+  font-size: 10px;
+  color: #757575;
+}
+
+.chat-popover > ion-content > div.scroll > ion-list > div > ion-item.item-avatar.item > img {
+  top: 0px;
+  left: 0px;
+  border-radius: 0px;
+}
+
+/***************************************************Profile view*****************************************/
+.profile-cover {
+  width: 100%;
+  height: 270px;
+  background-color: orange;
+}
+
+.profile-picture > .card {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 170px;
+  left: 30px;
+}
+
+.profile-picture > h1 {
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 170px;
+    font-size: 28px;
+    font-weight: normal;
+}

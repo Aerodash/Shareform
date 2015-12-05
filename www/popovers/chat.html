@@ -1,0 +1,22 @@
+<ion-popover-view class="chat-popover" ng-controller="ChatPopoverCtrl">
+  <ion-header-bar class="bar-dark item-input-inset">
+    <div class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-model="chatSearchBox">
+      <button class="icon ion-close placeholder-icon button-clear" ng-click="clearSearchBox()" ng-show="chatSearchBox != ''"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content has-bouncing="false" class="padding">
+    <ion-list>
+      <ion-item class="item-divider item-icon-left">
+        <i class="icon ion-android-star"></i>
+        Favorites
+      </ion-item>
+      <ion-item class="item-avatar item-icon-right" ng-repeat="favorite in chats.favorites | orderBy:'name' | orderBy:'-online'">
+        <img ng-src="{{favorite.img}}" width="40px" height="40px"></img>
+        {{favorite.name}}
+        <i class="icon ion-record" ng-style="favorite.online ? {'color': 'green'} : noop"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-popover-view>
